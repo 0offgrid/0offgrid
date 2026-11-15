@@ -1,13 +1,20 @@
-## M
+I build small, dependable automation for personal infrastructure: durable job execution, recoverable backups and command-line tooling that stays out of the way.
 
-I build local-first automation: orchestration, recoverable backups and tooling that keeps personal and creator workflows reliable.
+### Current work
 
-**Working on**
-- Durable execution and backup workflows for a personal automation stack
-- A single CLI that ties creator tooling together with evidence-backed records
+- **Execution backbone**: a self-hosted workflow coordinator on Debian with leased jobs, approval gates, encrypted backup and restore, and a lightweight pull worker on macOS. Python standard library and SQLite only.
+- **creator-os**: one command-line entry point over a set of local content tools, covering health checks, a capability index, spec generation and an evidence-backed ledger.
 
-**Stack**
-Python, shell, SQLite, GitHub Actions, macOS
+### Approach
 
-**Contact**
-Open an issue on any public repo, or reach me via the link in my profile.
+- Reuse what exists before building something new.
+- Prefer boring, inspectable parts: SQLite, systemd, plain Python.
+- Make every change reversible and every claim testable.
+
+### Stack
+
+Python · SQLite · Shell · systemd / launchd · GitHub Actions · Tailscale
+
+### Contact
+
+Open an issue on any public repository.
